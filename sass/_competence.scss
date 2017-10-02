@@ -1,0 +1,27 @@
+.flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+.card{
+  width: 100%;
+  @include tablet{
+      width: 45%;
+  }
+  margin-bottom: 20px;
+  background-color:lighten($premiereCouleur, 40%);
+  h3{
+    background-color: $premiereCouleur;
+    color:lighten($premiereCouleur, 90%);
+    padding:0;
+    margin:0;
+    text-align: center;
+  }
+  ul{
+
+    padding: 10px 30px;
+    list-style-type: disc;
+    color:black;
+  }
+}

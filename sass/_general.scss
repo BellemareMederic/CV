@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+
+
+
+body{
+  padding:0;
+  margin:0;
+  font-family: Montserrat, 'sans-serif';
+  overflow-x: hidden;
+}
+ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+.container{
+  overflow-x: hidden;
+  max-width: 90vw;
+  margin: 0 auto;
+  transition-property: width, height;
+  transition: 1s ease;
+
+  @include tablet{
+    max-width: 90vw;
+  }
+  @include desktop{
+    max-width: 65vw;
+  }
+}
+section{
+  .titreSection{
+    color:$premiereCouleur;
+    text-align: center;
+  }
+}
