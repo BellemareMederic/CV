@@ -34,4 +34,17 @@ section{
     color:$premiereCouleur;
     text-align: center;
   }
+
+
 }
+.more{
+    display: block;
+    text-align: center;
+    i{
+      font-size: 2em;
+      text-align: center;
+    }
+    &.active{
+      transform: rotate(180deg);
+    }
+  }
