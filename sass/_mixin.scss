@@ -27,3 +27,9 @@
     @content;
   }
 }
+
+@mixin print{
+  @media print and (min-width: 5in){
+    @content;
+  }
+}

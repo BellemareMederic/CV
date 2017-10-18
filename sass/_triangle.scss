@@ -1,0 +1,88 @@
+@mixin triangle($side,$color,$hauteur,$largeur:100vw) {
+  /*Par Médéric Bellemare*/
+  /*ne pas oublier de mettre le container du triangle
+  en position relative*/
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  @if $side == 'bottom-right' {
+    bottom:0;
+    right:0;
+    border-width: 0 0 $hauteur $largeur;
+    border-color: transparent transparent $color transparent;
+  }
+  @else if $side == 'bottom-left' {
+    bottom:0;
+      left:0;
+    border-width: 0 $largeur $hauteur 0;
+    border-color: transparent  transparent $color transparent;
+  }
+  @else if $side == 'top-left' {
+    top:0;
+    left:0;
+    border-width: 0 0 $hauteur $largeur;
+    border-color: transparent  transparent transparent $color;
+  }
+  @else if $side == 'top-right' {
+    top:0;
+    right:0;
+    border-width: $hauteur 0 0 $largeur;
+    border-color: $color transparent transparent transparent;
+  }
+  @else if $side == 'debug' {
+    top:0;
+    right:0;
+    border-width: $hauteur $largeur $hauteur $largeur;
+    border-color: #f00 #0f0 #00f #ff0;
+  }
+}
+body{
+  margin:0;
+  overflow: hidden;
+
+}
+.conteneur{
+  display: block;
+  background-color: #212121;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+h1{
+  margin:0;
+  padding:0;
+}
+p{
+  text-transform: uppercase;
+  color:white;
+  font-size: 2rem;
+  margin:0 auto;
+  text-align: center;
+  width: 60vw;
+  padding-top:50vh;
+}
+#triangle,#triangle2,#triangle3,#triangle4{
+    transition: all 2s ease;
+}
+.top-left{
+  @include triangle(top-left,#ff0,30vh);
+}
+.top-right{
+  @include triangle(top-right,#0f0,70vh);
+}
+.bottom-left{
+  @include triangle(bottom-left,#f00,30vh);
+}
+.bottom-right{
+  @include triangle(bottom-right,#f00,30vh);
+}
+.bottom-half{
+  @include triangle(bottom-right,#f00,30vh,50vw);
+}
+.right-top{
+  @include triangle(bottom-right,#f0f,100vh,20vw);
+}
+.debug{
+  @include triangle(debug,#f00,15vh,15vw);
+}
