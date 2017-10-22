@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+/*Couleur du site*/
+/*Largeur des container selon le breakpoint*/
+/*Breakpoint min-width*/
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2352,7 +2355,7 @@ ul {
       max-width: 65vw; } }
 
 section .titreSection {
-  color: #2CBA30;
+  color: #6c6bba;
   text-align: center; }
 
 .more {
@@ -2389,7 +2392,7 @@ section .titreSection {
     flex-shrink: 0;
     display: none;
     height: 40px;
-    border-left: 2px solid #2CBA30;
+    border-left: 2px solid #6c6bba;
     width: 10%; }
     .entry .date p {
       margin: 0 5px; }
@@ -2407,7 +2410,7 @@ section .titreSection {
     left: 0;
     content: "";
     width: 100vw;
-    border-bottom: 2px #c2f0c3 solid; }
+    border-bottom: 2px #f6f6fb solid; }
     @media (min-width: 576px) {
       .entry::after {
         display: none; } }
@@ -2429,7 +2432,7 @@ section .titreSection {
   .page-jmp {
     page-break-before: always; } }
 header {
-  background-color: #2CBA30;
+  background-color: #6c6bba;
   color: white; }
   header .infoGeneral {
     padding: 4vh 0;
@@ -2448,28 +2451,63 @@ h1 {
   text-align: center;
   margin: 0; }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: stretch; }
-
-.card {
-  width: 100%;
-  margin-bottom: 20px;
-  background-color: #c2f0c3; }
+#etudes {
+  position: relative;
+  background-color: #f6f6fb; }
   @media (min-width: 768px) {
-    .card {
-      width: 45%; } }
-  .card h3 {
-    background-color: #2CBA30;
-    color: white;
-    padding: 0;
-    margin: 0;
-    text-align: center; }
-  .card ul {
-    padding: 10px 30px;
-    list-style-type: disc;
-    color: black; }
+    #etudes {
+      padding: 5vh 0 2vh; }
+      #etudes .triangle {
+        /*Par Médéric Bellemare*/
+        /*ne pas oublier de mettre le parent du triangle
+        en position relative*/
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        top: 0;
+        left: 0;
+        border-width: 0 0 5vh 100vw;
+        border-color: transparent transparent transparent #6c6bba; } }
+  @media (min-width: 992px) {
+    #etudes {
+      padding: 10vh 0 5vh; }
+      #etudes .triangle {
+        /*Par Médéric Bellemare*/
+        /*ne pas oublier de mettre le parent du triangle
+        en position relative*/
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        top: 0;
+        left: 0;
+        border-width: 0 0 10vh 100vw;
+        border-color: transparent transparent transparent #6c6bba; } }
+
+#competance {
+  background-color: #f6f6fb; }
+  #competance .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: stretch; }
+  #competance .card {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #b1b1da; }
+    @media (min-width: 768px) {
+      #competance .card {
+        width: 45%; } }
+    #competance .card h3 {
+      background-color: #6c6bba;
+      color: white;
+      padding: 0;
+      margin: 0;
+      text-align: center; }
+    #competance .card ul {
+      padding: 10px 30px;
+      list-style-type: disc;
+      color: black; }
 
 /*# sourceMappingURL=style.css.map */

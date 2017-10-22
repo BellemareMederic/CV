@@ -10,6 +10,7 @@
 
 ?>
 <section id="etudes">
+    <div class="triangle"></div>
     <div class="container">
         <h2 class="titreSection">Études</h2>
         <ul>
