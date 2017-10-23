@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00e0ddba-0e93-4305-9470-87c4d606ad58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css.map" afterPath="$PROJECT_DIR$/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/section/etude.section.php" afterPath="$PROJECT_DIR$/includes/section/etude.section.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/section/experience.section.php" afterPath="$PROJECT_DIR$/includes/section/experience.section.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_competence.scss" afterPath="$PROJECT_DIR$/sass/_competence.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_etudes.scss" afterPath="$PROJECT_DIR$/sass/_etudes.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_experience.scss" afterPath="$PROJECT_DIR$/sass/_experience.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_general.scss" afterPath="$PROJECT_DIR$/sass/_general.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_variable.scss" afterPath="$PROJECT_DIR$/sass/_variable.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,11 +23,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_competence.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_competence.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_competence.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="222" column="18" lean-forward="false" selection-start-line="222" selection-start-column="18" selection-end-line="222" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -119,6 +119,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -138,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/includes/head.inc.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/sass/style.scss" />
@@ -155,6 +155,7 @@
         <option value="$PROJECT_DIR$/sass/_etudes.scss" />
         <option value="$PROJECT_DIR$/sass/_experience.scss" />
         <option value="$PROJECT_DIR$/sass/_competence.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -259,6 +260,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../walldetection" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -292,12 +294,12 @@
       <workItem from="1507749180681" duration="46000" />
       <workItem from="1508014071896" duration="12233000" />
       <workItem from="1508206857403" duration="26000" />
-      <workItem from="1508788625798" duration="1536000" />
+      <workItem from="1508788625798" duration="1770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33641000" />
+    <option name="totallyTimeSpent" value="33875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -562,7 +564,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/erreurs/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -702,6 +703,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="222" column="18" lean-forward="false" selection-start-line="222" selection-start-column="18" selection-end-line="222" selection-end-column="18" />
           <folding />
         </state>
       </provider>
