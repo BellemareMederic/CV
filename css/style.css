@@ -2335,6 +2335,9 @@ body {
   margin: 0;
   font-family: Montserrat, 'sans-serif';
   overflow-x: hidden; }
+  @media (min-width: 768px) {
+    body {
+      font-size: 1.3em; } }
 
 ul {
   list-style: none;
@@ -2343,8 +2346,8 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
-  cursor: hand; }
+  cursor: hand;
+  color: #fff; }
   a:hover {
     color: green; }
 
@@ -2364,6 +2367,8 @@ a {
 section .titreSection {
   text-align: center;
   text-transform: uppercase; }
+section .hidden {
+  display: none; }
 
 .more {
   display: block;
@@ -2399,7 +2404,7 @@ section .titreSection {
     flex-shrink: 0;
     display: none;
     height: 40px;
-    border-left: 2px solid #d81315;
+    border-left: 2px solid #0001ff;
     width: 10%; }
     .entry .date p {
       margin: 0 5px; }
@@ -2417,7 +2422,7 @@ section .titreSection {
     left: 0;
     content: "";
     width: 100vw;
-    border-bottom: 2px #f9bebe solid; }
+    border-bottom: 2px #ccccff solid; }
     @media (min-width: 576px) {
       .entry::after {
         display: none; } }
@@ -2438,10 +2443,13 @@ section .titreSection {
     display: none; }
 
   .page-jmp {
-    page-break-before: always; } }
+    page-break-before: always; }
+
+  .hidden {
+    display: block !important; } }
 header {
-  background-color: #d81315;
-  color: #000; }
+  background-color: #0001ff;
+  color: #fff; }
   header .infoGeneral {
     padding: 2vh 0;
     display: flex;
@@ -2465,7 +2473,8 @@ h1 {
 #etudes {
   position: relative;
   background-color: white;
-  color: #000; }
+  color: #000;
+  overflow: hidden; }
   #etudes .titreSection {
     color: #000; }
   @media (min-width: 576px) {
@@ -2482,7 +2491,7 @@ h1 {
         top: 0;
         left: 0;
         border-width: 0 0 5vh 100vw;
-        border-color: transparent transparent transparent #d81315; } }
+        border-color: transparent transparent transparent #0001ff; } }
   @media (min-width: 992px) {
     #etudes {
       padding: 10vh 0 5vh; }
@@ -2497,11 +2506,13 @@ h1 {
         top: 0;
         left: 0;
         border-width: 0 0 10vh 100vw;
-        border-color: transparent transparent transparent #d81315; } }
+        border-color: transparent transparent transparent #0001ff; } }
 
 #experience {
-  background-color: #d81315;
-  color: #000; }
+  background-color: #0001ff;
+  color: #fff;
+  overflow: hidden;
+  padding-bottom: 40px; }
   @media (min-width: 768px) {
     #experience h3 {
       margin: 0; } }
@@ -2522,13 +2533,13 @@ h1 {
   #competance .card {
     width: 100%;
     margin-bottom: 20px;
-    background-color: #f16061; }
+    background-color: #ccccff; }
     @media (min-width: 768px) {
       #competance .card {
         width: 45%; } }
     #competance .card h3 {
-      background-color: #d81315;
-      color: #000;
+      background-color: #0001ff;
+      color: #fff;
       padding: 0;
       margin: 0;
       text-align: center; }
@@ -2548,7 +2559,7 @@ h1 {
       bottom: 0;
       right: 0;
       border-width: 0 0 5vh 100vw;
-      border-color: transparent transparent #d81315 transparent; } }
+      border-color: transparent transparent #0001ff transparent; } }
   @media (min-width: 992px) {
     #competance .triangle {
       /*Par Médéric Bellemare*/
@@ -2561,6 +2572,6 @@ h1 {
       bottom: 0;
       right: 0;
       border-width: 0 0 10vh 100vw;
-      border-color: transparent transparent #d81315 transparent; } }
+      border-color: transparent transparent #0001ff transparent; } }
 
 /*# sourceMappingURL=style.css.map */

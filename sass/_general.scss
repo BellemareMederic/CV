@@ -7,6 +7,8 @@ body{
   margin:0;
   font-family: Montserrat, 'sans-serif';
   overflow-x: hidden;
+
+  @include tablet(){font-size: 1.3em}
 }
 
 ul{
@@ -17,8 +19,8 @@ ul{
 
 a{
   text-decoration: none;
-  color:black;
   cursor: hand;
+  color:$textPremierCouleur;
   &:hover{
     color:green;
   }
@@ -43,7 +45,9 @@ section{
     text-align: center;
     text-transform: uppercase;
   }
-
+.hidden{
+  display: none;
+}
 
 }
 .more{
@@ -130,6 +134,9 @@ section{
   }
   .page-jmp{
     page-break-before: always;
+  }
+  .hidden{
+    display:block !important;
   }
 
 }

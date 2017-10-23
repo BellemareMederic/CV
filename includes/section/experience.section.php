@@ -53,7 +53,7 @@
         </div>
       </li>
     </ul>
-    <ul id="moreStudy">
+    <ul id="moreExp" class="hidden">
       <li class="entry">
         <div class="info">
           <h3>Tim Horton</h3>
@@ -82,6 +82,6 @@
             </div>
         </li>
     </ul>
-    <div class="more"><i id='btnMoreStudy' class="fa fa-angle-double-down fa-rotate-180"></i></div>
+    <div class="more"><i id='btnMoreExp' class="fa fa-angle-double-down"></i></div>
   </div>
 </section>

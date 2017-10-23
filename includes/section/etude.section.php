@@ -42,7 +42,7 @@
                 </div>
             </li>
         </ul>
-        <ul id="moreEtude">
+        <ul id="moreEtude" class="hidden">
             <li class="entry">
                 <div class="info">
                     <h3>Dimplome études secondaire</h3>
@@ -53,6 +53,6 @@
                 </div>
             </li>
         </ul>
-        <div class="more"><i id='btnMoreEtude' class="fa fa-angle-double-down fa-rotate-180"></i></div>
+        <div class="more"><i id='btnMoreEtude' class="fa fa-angle-double-down"></i></div>
     </div>
 </section>

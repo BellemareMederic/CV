@@ -1,14 +1,11 @@
 $('document').ready(function () {
     console.log('Main.js loaded');
-    toggleEtude();
-    toggleStudy();
-
     $('#btnMoreEtude').click(function () {
         toggleEtude();
     });
 
-    $('#btnMoreStudy').click(function () {
-        toggleStudy();
+    $('#btnMoreExp').click(function () {
+        toggleExp();
     });
 
     $( window ).bind( "onbeforeprint", toggleEtude );
@@ -18,8 +15,8 @@ $('document').ready(function () {
         $('#btnMoreEtude').toggleClass('fa-rotate-180');
     }
 
-    function toggleStudy() {
-        $('#moreStudy').toggle('hide');
-        $('#btnMoreStudy').toggleClass('fa-rotate-180');
+    function toggleExp() {
+        $('#moreExp').toggle('hide');
+        $('#btnMoreExp').toggleClass('fa-rotate-180');
     }
 });

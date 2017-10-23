@@ -1,6 +1,8 @@
 #experience{
   background-color: $premiereCouleur;
   color:$textPremierCouleur;
+  overflow: hidden;
+  padding-bottom: 40px;
   h3{
     @include tablet{
       margin:0;

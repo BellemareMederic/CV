@@ -15,7 +15,7 @@
   .card{
     width: 100%;
     margin-bottom: 20px;
-    background-color:lighten($premiereCouleur, 20%);
+    background-color:lighten($premiereCouleur, 40%);
     @include tablet{
       width: 45%;
     }

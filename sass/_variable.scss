@@ -1,16 +1,16 @@
 /*Couleur du site*/
-$premiereCouleur : #d81315 !default;
+$premiereCouleur : rgb(0, 1, 255) !default;
 $deuxiemeCouleur : lighten($premiereCouleur, 100%) !default;
 $textPremierCouleur: #fff !default;
 $textDeuxiemeCouleur:#000 !default;
 
-@if(lightness($premiereCouleur)<40) {
+@if(lightness($premiereCouleur)<60) {
   $textPremierCouleur: #fff;
 }@else {
   $textPremierCouleur:#000;
 }
 
-@if(lightness($deuxiemeCouleur)<40) {
+@if(lightness($deuxiemeCouleur)<60) {
   $textDeuxiemeCouleur: #fff;
 }@else {
   $textDeuxiemeCouleur:#000;
