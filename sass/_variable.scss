@@ -1,7 +1,20 @@
 /*Couleur du site*/
-$premiereCouleur : #6c6bba !default;
-$deuxiemeCouleur : lighten($premiereCouleur, 40%) !default;
+$premiereCouleur : #d81315 !default;
+$deuxiemeCouleur : lighten($premiereCouleur, 100%) !default;
+$textPremierCouleur: #fff !default;
+$textDeuxiemeCouleur:#000 !default;
 
+@if(lightness($premiereCouleur)<40) {
+  $textPremierCouleur: #fff;
+}@else {
+  $textPremierCouleur:#000;
+}
+
+@if(lightness($deuxiemeCouleur)<40) {
+  $textDeuxiemeCouleur: #fff;
+}@else {
+  $textDeuxiemeCouleur:#000;
+}
 
 /*Largeur des container selon le breakpoint*/
 $containerSizeDesktop:65vw !default;

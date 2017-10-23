@@ -1,10 +1,16 @@
 #competance{
+  position: relative;
   background-color: $deuxiemeCouleur;
+  padding:0 0 10vh 0;
+  .titreSection{
+    color:$textDeuxiemeCouleur;
+  }
   .flex{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: stretch;
+
   }
   .card{
     width: 100%;
@@ -15,7 +21,7 @@
     }
     h3{
       background-color: $premiereCouleur;
-      color:lighten($premiereCouleur, 90%);
+      color:$textPremierCouleur;
       padding:0;
       margin:0;
       text-align: center;
@@ -23,7 +29,15 @@
     ul{
       padding: 10px 30px;
       list-style-type: disc;
-      color:black;
+      color:$textDeuxiemeCouleur;
+    }
+  }
+  .triangle{
+    @include small{
+      @include triangle('bottom-right',$premiereCouleur,5vh);
+    }
+    @include desktop{
+      @include triangle('bottom-right',$premiereCouleur,10vh);
     }
   }
 }

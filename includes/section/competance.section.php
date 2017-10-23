@@ -9,6 +9,7 @@
  */
 ?>
 <section id="competance" class="page-jmp">
+    <div class="triangle"></div>
   <div class="container">
     <h2 class="titreSection">Compétence</h2>
     <div class="flex">

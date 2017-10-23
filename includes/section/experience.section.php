@@ -8,7 +8,7 @@
  * Time: 07:20 PM
  */
 ?>
-<section id="experience" class="page-jmp">
+<section id="experience" class="">
   <div class="container">
     <h2 class="titreSection">Expérience pertinent</h2>
     <ul>

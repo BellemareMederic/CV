@@ -2341,6 +2341,13 @@ ul {
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none;
+  color: black;
+  cursor: hand; }
+  a:hover {
+    color: green; }
+
 .container {
   overflow-x: hidden;
   max-width: 90vw;
@@ -2355,8 +2362,8 @@ ul {
       max-width: 65vw; } }
 
 section .titreSection {
-  color: #6c6bba;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .more {
   display: block;
@@ -2392,7 +2399,7 @@ section .titreSection {
     flex-shrink: 0;
     display: none;
     height: 40px;
-    border-left: 2px solid #6c6bba;
+    border-left: 2px solid #d81315;
     width: 10%; }
     .entry .date p {
       margin: 0 5px; }
@@ -2410,7 +2417,7 @@ section .titreSection {
     left: 0;
     content: "";
     width: 100vw;
-    border-bottom: 2px #f6f6fb solid; }
+    border-bottom: 2px #f9bebe solid; }
     @media (min-width: 576px) {
       .entry::after {
         display: none; } }
@@ -2420,7 +2427,8 @@ section .titreSection {
     width: 100%;
     margin: 0;
     padding: 0;
-    color: #000 !important; }
+    color: #000 !important;
+    background-color: #fff !important; }
 
   h1, h2, h3, h4, h5, h6, ul, li {
     margin: 0;
@@ -2432,14 +2440,17 @@ section .titreSection {
   .page-jmp {
     page-break-before: always; } }
 header {
-  background-color: #6c6bba;
-  color: white; }
+  background-color: #d81315;
+  color: #000; }
   header .infoGeneral {
-    padding: 4vh 0;
+    padding: 2vh 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between; }
+    @media (min-width: 768px) {
+      header .infoGeneral {
+        padding: 2vh 0 0; } }
   header ul {
     list-style: none;
     margin: 0;
@@ -2453,8 +2464,11 @@ h1 {
 
 #etudes {
   position: relative;
-  background-color: #f6f6fb; }
-  @media (min-width: 768px) {
+  background-color: white;
+  color: #000; }
+  #etudes .titreSection {
+    color: #000; }
+  @media (min-width: 576px) {
     #etudes {
       padding: 5vh 0 2vh; }
       #etudes .triangle {
@@ -2468,7 +2482,7 @@ h1 {
         top: 0;
         left: 0;
         border-width: 0 0 5vh 100vw;
-        border-color: transparent transparent transparent #6c6bba; } }
+        border-color: transparent transparent transparent #d81315; } }
   @media (min-width: 992px) {
     #etudes {
       padding: 10vh 0 5vh; }
@@ -2483,10 +2497,23 @@ h1 {
         top: 0;
         left: 0;
         border-width: 0 0 10vh 100vw;
-        border-color: transparent transparent transparent #6c6bba; } }
+        border-color: transparent transparent transparent #d81315; } }
+
+#experience {
+  background-color: #d81315;
+  color: #000; }
+  @media (min-width: 768px) {
+    #experience h3 {
+      margin: 0; } }
+  #experience .date {
+    border-left: 2px solid white; }
 
 #competance {
-  background-color: #f6f6fb; }
+  position: relative;
+  background-color: white;
+  padding: 0 0 10vh 0; }
+  #competance .titreSection {
+    color: #000; }
   #competance .flex {
     display: flex;
     justify-content: space-between;
@@ -2495,19 +2522,45 @@ h1 {
   #competance .card {
     width: 100%;
     margin-bottom: 20px;
-    background-color: #b1b1da; }
+    background-color: #f16061; }
     @media (min-width: 768px) {
       #competance .card {
         width: 45%; } }
     #competance .card h3 {
-      background-color: #6c6bba;
-      color: white;
+      background-color: #d81315;
+      color: #000;
       padding: 0;
       margin: 0;
       text-align: center; }
     #competance .card ul {
       padding: 10px 30px;
       list-style-type: disc;
-      color: black; }
+      color: #000; }
+  @media (min-width: 576px) {
+    #competance .triangle {
+      /*Par Médéric Bellemare*/
+      /*ne pas oublier de mettre le parent du triangle
+      en position relative*/
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      bottom: 0;
+      right: 0;
+      border-width: 0 0 5vh 100vw;
+      border-color: transparent transparent #d81315 transparent; } }
+  @media (min-width: 992px) {
+    #competance .triangle {
+      /*Par Médéric Bellemare*/
+      /*ne pas oublier de mettre le parent du triangle
+      en position relative*/
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      bottom: 0;
+      right: 0;
+      border-width: 0 0 10vh 100vw;
+      border-color: transparent transparent #d81315 transparent; } }
 
 /*# sourceMappingURL=style.css.map */

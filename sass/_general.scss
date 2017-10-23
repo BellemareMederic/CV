@@ -15,6 +15,15 @@ ul{
   padding: 0;
 }
 
+a{
+  text-decoration: none;
+  color:black;
+  cursor: hand;
+  &:hover{
+    color:green;
+  }
+}
+
 .container{
   overflow-x: hidden;
   max-width: $containerSizeMobile;
@@ -31,8 +40,8 @@ ul{
 }
 section{
   .titreSection{
-    color:$premiereCouleur;
     text-align: center;
+    text-transform: uppercase;
   }
 
 
@@ -110,6 +119,7 @@ section{
     margin:0;
     padding:0;
     color:#000 !important;
+    background-color:#fff !important;
   }
   h1,h2,h3,h4,h5,h6,ul,li{
     margin:0;

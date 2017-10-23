@@ -1,12 +1,15 @@
 header{
   background-color: $premiereCouleur;
-  color:white;
+  color:$textPremierCouleur;
   .infoGeneral{
-    padding:4vh 0;
+    padding:2vh 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    @include tablet{
+      padding:2vh 0 0;
+    }
   }
   ul{
     list-style: none;
