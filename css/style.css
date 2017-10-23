@@ -2372,7 +2372,8 @@ section .hidden {
 
 .more {
   display: block;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
   .more i {
     font-size: 2em;
     text-align: center; }
