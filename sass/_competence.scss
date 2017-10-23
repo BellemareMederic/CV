@@ -1,27 +1,44 @@
-.flex{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: stretch;
-}
-.card{
-  width: 100%;
-  @include tablet{
-      width: 45%;
+#competance{
+  position: relative;
+  background-color: $deuxiemeCouleur;
+  padding:0 0 10vh 0;
+  .titreSection{
+    color:$textDeuxiemeCouleur;
   }
-  margin-bottom: 20px;
-  background-color:lighten($premiereCouleur, 40%);
-  h3{
-    background-color: $premiereCouleur;
-    color:lighten($premiereCouleur, 90%);
-    padding:0;
-    margin:0;
-    text-align: center;
-  }
-  ul{
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: stretch;
 
-    padding: 10px 30px;
-    list-style-type: disc;
-    color:black;
+  }
+  .card{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color:lighten($premiereCouleur, 20%);
+    @include tablet{
+      width: 45%;
+    }
+    h3{
+      background-color: $premiereCouleur;
+      color:$textPremierCouleur;
+      padding:0;
+      margin:0;
+      text-align: center;
+    }
+    ul{
+      padding: 10px 30px;
+      list-style-type: disc;
+      color:$textDeuxiemeCouleur;
+    }
+  }
+  .triangle{
+    @include small{
+      @include triangle('bottom-right',$premiereCouleur,5vh);
+    }
+    @include desktop{
+      @include triangle('bottom-right',$premiereCouleur,10vh);
+    }
   }
 }
+

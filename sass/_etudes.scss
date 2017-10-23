@@ -1,0 +1,21 @@
+#etudes{
+  position: relative;
+  background-color: $deuxiemeCouleur;
+  color:$textDeuxiemeCouleur;
+  .titreSection{
+    color:$textDeuxiemeCouleur;
+  }
+  @include small{
+    padding:5vh 0 2vh;
+    .triangle{
+      @include triangle("top-left",$premiereCouleur,5vh,100vw);
+    }
+  }
+  @include desktop{
+    padding:10vh 0 5vh;
+    .triangle{
+      @include triangle("top-left",$premiereCouleur,10vh,100vw);
+    }
+  }
+}
+

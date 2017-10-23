@@ -1,7 +1,27 @@
-$premiereCouleur : rgb(116,178,48)  !default;
-$containerSize:70vw !default;
+/*Couleur du site*/
+$premiereCouleur : #d81315 !default;
+$deuxiemeCouleur : lighten($premiereCouleur, 100%) !default;
+$textPremierCouleur: #fff !default;
+$textDeuxiemeCouleur:#000 !default;
 
+@if(lightness($premiereCouleur)<40) {
+  $textPremierCouleur: #fff;
+}@else {
+  $textPremierCouleur:#000;
+}
 
+@if(lightness($deuxiemeCouleur)<40) {
+  $textDeuxiemeCouleur: #fff;
+}@else {
+  $textDeuxiemeCouleur:#000;
+}
 
+/*Largeur des container selon le breakpoint*/
+$containerSizeDesktop:65vw !default;
+$containerSizeMobile:90vw !default;
 
-$premiereCouleur : rgb(222, 74, 42);
+/*Breakpoint min-width*/
+$break-small:576px;
+$break-tablet:768px;
+$break-desktop:992px;
+$break-large:1200px;

@@ -1,0 +1,39 @@
+@mixin triangle($side,$color,$hauteur,$largeur:100vw) {
+  /*Par Médéric Bellemare*/
+  /*ne pas oublier de mettre le parent du triangle
+  en position relative*/
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  @if $side == 'bottom-right' {
+    bottom:0;
+    right:0;
+    border-width: 0 0 $hauteur $largeur;
+    border-color: transparent transparent $color transparent;
+  }
+  @else if $side == 'bottom-left' {
+    bottom:0;
+      left:0;
+    border-width: 0 $largeur $hauteur 0;
+    border-color: transparent  transparent $color transparent;
+  }
+  @else if $side == 'top-left' {
+    top:0;
+    left:0;
+    border-width: 0 0 $hauteur $largeur;
+    border-color: transparent  transparent transparent $color;
+  }
+  @else if $side == 'top-right' {
+    top:0;
+    right:0;
+    border-width: $hauteur 0 0 $largeur;
+    border-color: $color transparent transparent transparent;
+  }
+  @else if $side == 'debug' {
+    top:0;
+    right:0;
+    border-width: $hauteur $largeur $hauteur $largeur;
+    border-color: #f00 #0f0 #00f #ff0;
+  }
+}

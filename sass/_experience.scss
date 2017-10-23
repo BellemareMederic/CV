@@ -1,0 +1,12 @@
+#experience{
+  background-color: $premiereCouleur;
+  color:$textPremierCouleur;
+  h3{
+    @include tablet{
+      margin:0;
+    }
+  }
+  .date{
+    border-left: 2px solid $deuxiemeCouleur;
+  }
+}
