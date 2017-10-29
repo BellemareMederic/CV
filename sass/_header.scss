@@ -1,26 +1,35 @@
 header{
-  background-color: $premiereCouleur;
-  color:$textPremierCouleur;
+  background-color: $Header_bg_Color;
+  color:$Header_font_Color;
+  padding:$Section_mobile_Padding;
+  @include tablet{
+    padding:5vh 0 0;
+  }
   .infoGeneral{
-    padding:2vh 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    @include tablet{
-      padding:2vh 0 0;
-    }
+
   }
   ul{
     list-style: none;
     margin:0;
     padding:0;
   }
+  a{
+    color:$Header_link_Color;
+    &:hover{
+      color:$Header_link_OverColor;
+    }
+    &:active,&:visited{
+      color:$Header_link_ActiveColor;
+    }
+  }
 }
 
 h1{
   padding: 0;
-  padding-top:4vh;
   text-align: center;
   margin:0;
 }

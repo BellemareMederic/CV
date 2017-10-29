@@ -1,12 +1,26 @@
 #experience{
-  background-color: $premiereCouleur;
-  color:$textPremierCouleur;
+  position: relative;
+  background-color: $Section1_bg_color;
+  padding:$Section_mobile_Padding;
+
+  color:#000;
+  .triangle{
+    position: absolute;
+    top:0;
+    left:0;
+    @include small{
+      @include triangle('top-left',$Section2_bg_color,5vh);
+    }
+    @include desktop{
+      @include triangle('top-left',$Section2_bg_color,10vh);
+    }
+  }
   h3{
     @include tablet{
       margin:0;
     }
   }
   .date{
-    border-left: 2px solid $deuxiemeCouleur;
+    border-left: 2px solid #000;
   }
 }

@@ -1,20 +1,34 @@
-/*Couleur du site*/
-$premiereCouleur : #d81315 !default;
-$deuxiemeCouleur : lighten($premiereCouleur, 100%) !default;
-$textPremierCouleur: #fff !default;
-$textDeuxiemeCouleur:#000 !default;
+/*General option*/
+$Section_mobile_Padding:4vh 0;
+$Section_tablet_Padding:5vh 0;
+/*Couleur du header*/
+  $Header_bg_Color:$matIngigo !default;
+  $Header_font_Color: #fff !default;
+  $Header_link_Color:#fff !default;
+  $Header_link_OverColor:#fff !default;
+  $Header_link_ActiveColor: #c1c1c1 !default;
+/*------------------*/
 
-@if(lightness($premiereCouleur)<40) {
-  $textPremierCouleur: #fff;
-}@else {
-  $textPremierCouleur:#000;
-}
+/*Couleur de section 1*/
+$Section1_bg_color: #cecece;
+$Section1_font_color:#000;
+$Section1_link_color:#000;
+$Section1_link_hover:#000;
+$Section1_link_active:#000;
+$Section1_infoline_spliter:$Header_bg_Color;
+/*------------------*/
 
-@if(lightness($deuxiemeCouleur)<40) {
-  $textDeuxiemeCouleur: #fff;
-}@else {
-  $textDeuxiemeCouleur:#000;
-}
+/*Couleur de section 2*/
+$Section2_bg_color: $matIngigo;
+$Section2_font_color: #fff;
+$Section2_box_font_color:#fff;
+$Section2_box_border_color:$matRed;
+$Section2_box_bg_color: #D32F2F;
+$Section2_link_color:#000;
+$Section2_link_hover:#000;
+$Section2_link_active:#000;
+$Section2_infoline_spliter:$Header_bg_Color;
+/*------------------*/
 
 /*Largeur des container selon le breakpoint*/
 $containerSizeDesktop:65vw !default;

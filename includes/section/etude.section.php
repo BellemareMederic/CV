@@ -14,7 +14,7 @@
     <div class="container">
         <h2 class="titreSection">Études</h2>
         <ul>
-            <li class="entry">
+            <li class="infoline">
                 <div class="info">
                     <h3>AEC développement web</h3>
                     <p>Cégep Garneau, Québec, (Québec)</p>
@@ -23,7 +23,7 @@
                     <p>En cours</p>
                 </div>
             </li>
-            <li class="entry">
+            <li class="infoline">
                 <div class="info">
                     <h3>Gestion de réseaux informatique et informatique de gestion</h3>
                     <p>Cégep de Rosemont, Montréal, (Québec)</p>
@@ -32,7 +32,7 @@
                     <p>2013 à 2016</p>
                 </div>
             </li>
-            <li class="entry">
+            <li class="infoline">
                 <div class="info">
                     <h3>DEP Soutien informatique</h3>
                     <p>ÉMICA, Montréal (Québec)</p>
@@ -43,7 +43,7 @@
             </li>
         </ul>
         <ul id="moreEtude">
-            <li class="entry">
+            <li class="infoline">
                 <div class="info">
                     <h3>Dimplome études secondaire</h3>
                     <p></p>

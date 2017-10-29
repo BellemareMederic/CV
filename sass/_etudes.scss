@@ -1,20 +1,77 @@
 #etudes{
   position: relative;
-  background-color: $deuxiemeCouleur;
-  color:$textDeuxiemeCouleur;
+  background-color: $Section1_bg_color;
+  color:$Section1_font_color;
+  padding:$Section_mobile_Padding;
+  @include tablet{
+    padding:8vh 0 0;
+  }
   .titreSection{
-    color:$textDeuxiemeCouleur;
+    color:$Section1_font_color;
   }
   @include small{
-    padding:5vh 0 2vh;
     .triangle{
-      @include triangle("top-left",$premiereCouleur,5vh,100vw);
+      @include triangle("top-left",$Header_bg_Color,5vh,100vw);
     }
   }
   @include desktop{
-    padding:10vh 0 5vh;
     .triangle{
-      @include triangle("top-left",$premiereCouleur,10vh,100vw);
+      @include triangle("top-left",$Header_bg_Color,10vh,100vw);
+    }
+  }
+}
+.infoline{
+  position: relative;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vh;
+  .info{
+    width: 100%;
+    h3{
+      margin:2vh 0 0 0;
+    }
+    p{
+      margin:10px 0;
+    }
+    ul{
+      list-style:disc;
+      padding-left: 20px;
+      font-size: 0.8em;
+    }
+    @include small{
+      width: 80%;
+    }
+  }
+  .date{
+    flex-shrink: 0;
+    display: none;
+    height: 40px;
+    border-left: 2px solid $Section1_infoline_spliter;
+    width: 10%;
+    p{
+      margin:0 5px;
+      @include small{
+        margin:0 10px;
+      }
+    }
+    @include small{
+      display: block;
+      width: 15%;
+    }
+  }
+  &::after{
+    position: absolute;
+    margin-top:2vh;
+    bottom:-2vh;
+    left:0;
+    content:"";
+    width: 100vw;
+    border-bottom:2px lighten($Section1_infoline_spliter, 40%) solid;
+    @include small{
+      display: none;
     }
   }
 }

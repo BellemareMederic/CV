@@ -1,9 +1,9 @@
 #competance{
   position: relative;
-  background-color: $deuxiemeCouleur;
-  padding:0 0 10vh 0;
+  background-color: $Section2_bg_color;
+  padding:$Section_tablet_Padding;
   .titreSection{
-    color:$textDeuxiemeCouleur;
+    color:$Section2_font_color;
   }
   .flex{
     display: flex;
@@ -15,13 +15,18 @@
   .card{
     width: 100%;
     margin-bottom: 20px;
-    background-color:lighten($premiereCouleur, 20%);
+    background-color:$Section2_box_bg_color;
+    transition: box-shadow 0.2s linear;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    &:hover{
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
     @include tablet{
       width: 45%;
     }
     h3{
-      background-color: $premiereCouleur;
-      color:$textPremierCouleur;
+      background-color: $Section2_box_border_color;
+      color:$Section2_box_font_color;
       padding:0;
       margin:0;
       text-align: center;
@@ -29,15 +34,18 @@
     ul{
       padding: 10px 30px;
       list-style-type: disc;
-      color:$textDeuxiemeCouleur;
+      color:$Section2_box_font_color;
     }
   }
   .triangle{
+    position: absolute;
+    top:0;
+    left:0;
     @include small{
-      @include triangle('bottom-right',$premiereCouleur,5vh);
+      @include triangle('top-left',$Section1_bg_color,5vh);
     }
     @include desktop{
-      @include triangle('bottom-right',$premiereCouleur,10vh);
+      @include triangle('top-left',$Section1_bg_color,10vh);
     }
   }
 }

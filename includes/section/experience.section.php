@@ -9,10 +9,11 @@
  */
 ?>
 <section id="experience" class="">
+    <div class="triangle"></div>
   <div class="container">
     <h2 class="titreSection">Expérience pertinent</h2>
     <ul>
-      <li class="entry">
+      <li class="infoline">
         <div class="info">
           <h3>Ministère du Développement durable, de l’Environnement et de la Lutte contre les changements climatiques</h3>
           <p>Technicien informatique</p>
@@ -25,7 +26,7 @@
           <p>2016</p>
         </div>
       </li>
-      <li class="entry">
+      <li class="infoline">
         <div class="info">
           <h3>La Galette Libanaise</h3>
           <p>Cuisinier</p>
@@ -39,7 +40,7 @@
           <p>Emploi actuel</p>
         </div>
       </li>
-      <li class="entry">
+      <li class="infoline">
         <div class="info">
           <h3>Commission Scolaire de la Pointe-de-l’île </h3>
           <p>Technicien informatique</p>
@@ -54,7 +55,7 @@
       </li>
     </ul>
     <ul id="moreStudy">
-      <li class="entry">
+      <li class="infoline">
         <div class="info">
           <h3>Tim Horton</h3>
           <p>Caissier au service à la clientèle</p>
@@ -68,7 +69,7 @@
           <p>2012</p>
         </div>
       </li>
-        <li class="entry">
+        <li class="infoline">
             <div class="info">
                 <h3>PC suprême</h3>
                 <p>Technicien informatique</p>
