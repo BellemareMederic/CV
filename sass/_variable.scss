@@ -1,3 +1,4 @@
+
 /*General option*/
 $Section_mobile_Padding:4vh 0;
 $Section_tablet_Padding:5vh 0;
@@ -10,7 +11,7 @@ $Section_tablet_Padding:5vh 0;
 /*------------------*/
 
 /*Couleur de section 1*/
-$Section1_bg_color: #cecece;
+$Section1_bg_color: #dddddd;
 $Section1_font_color:#000;
 $Section1_link_color:#000;
 $Section1_link_hover:#000;
@@ -29,6 +30,7 @@ $Section2_link_hover:#000;
 $Section2_link_active:#000;
 $Section2_infoline_spliter:$Header_bg_Color;
 /*------------------*/
+
 
 /*Largeur des container selon le breakpoint*/
 $containerSizeDesktop:65vw !default;

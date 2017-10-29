@@ -2,8 +2,10 @@
   position: relative;
   background-color: $Section1_bg_color;
   padding:$Section_mobile_Padding;
-
   color:#000;
+  @include tablet{
+    padding:8vh 0 0;
+  }
   .triangle{
     position: absolute;
     top:0;

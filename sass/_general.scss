@@ -1,82 +1,91 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
-  padding:0;
-  margin:0;
+body {
+  padding: 0;
+  margin: 0;
   font-family: Montserrat, 'sans-serif';
   overflow-x: hidden;
-}
 
-ul{
-  list-style: none;
-  margin:0;
-  padding: 0;
-}
-
-a{
-  text-decoration: none;
-  color:black;
-  cursor: hand;
-  &:hover{
-    color:green;
+  @include tablet() {
+    font-size: 1.1em
   }
 }
 
-.container{
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: hand;
+  color: $Header_link_Color;
+  &:hover {
+    color: green;
+  }
+}
+
+.container {
   overflow-x: hidden;
   max-width: $containerSizeMobile;
   margin: 0 auto;
   transition-property: width, height;
   transition: 1s ease;
 
-  @include tablet{
+  @include tablet {
     max-width: $containerSizeMobile;
   }
-  @include desktop{
+  @include desktop {
     max-width: $containerSizeDesktop;
   }
 }
-section{
-  .titreSection{
+
+section {
+  .titreSection {
     text-align: center;
     text-transform: uppercase;
   }
-}
-.more{
-    display: block;
-    text-align: center;
-    i{
-      font-size: 2em;
-      text-align: center;
-    }
-    &.active{
-      transform: rotate(180deg);
-    }
-  }
 
-
-@include print{
-  *{
-    width: 100%;
-    margin:0;
-    padding:0;
-    color:#000 !important;
-    background-color:#fff !important;
-  }
-  h1,h2,h3,h4,h5,h6,ul,li{
-    margin:0;
-    padding:0;
-  }
-  .fa-angle-double-down{
+  .hidden {
     display: none;
   }
-  .page-jmp{
+}
+
+.more {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  i {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+@include print {
+  * {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #000 !important;
+    background-color: #fff !important;
+  }
+  h1, h2, h3, h4, h5, h6, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  .fa-angle-double-down {
+    display: none;
+  }
+  .page-jmp {
     page-break-before: always;
   }
-  #moreEtude{
-    display: block;
+
+  .hidden {
+    display: block !important;
+
   }
 
 }

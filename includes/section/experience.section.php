@@ -54,8 +54,9 @@
         </div>
       </li>
     </ul>
-    <ul id="moreStudy">
-      <li class="infoline">
+    <ul id="moreExp" class="hidden">
+        <li class="infoline">
+
         <div class="info">
           <h3>Tim Horton</h3>
           <p>Caissier au service à la clientèle</p>
@@ -83,6 +84,6 @@
             </div>
         </li>
     </ul>
-    <div class="more"><i id='btnMoreStudy' class="fa fa-angle-double-down fa-rotate-180"></i></div>
+    <div class="more"><i id='btnMoreExp' class="fa fa-angle-double-down"></i></div>
   </div>
 </section>
