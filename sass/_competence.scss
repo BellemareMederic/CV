@@ -23,16 +23,21 @@
     }
     @include tablet{
       width: 45%;
+
     }
     h3{
       background-color: $Section2_box_border_color;
-      color:$Section2_box_font_color;
+      color:$Section2_font_color;
       padding:0;
       margin:0;
       text-align: center;
+      @include tablet{
+
+        padding:10px 0;
+      }
     }
     ul{
-      padding: 10px 30px;
+      padding: 10px 60px;
       list-style-type: disc;
       color:$Section2_box_font_color;
     }

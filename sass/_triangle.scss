@@ -30,10 +30,4 @@
     border-width: $hauteur 0 0 $largeur;
     border-color: $color transparent transparent transparent;
   }
-  @else if $side == 'debug' {
-    top:0;
-    right:0;
-    border-width: $hauteur $largeur $hauteur $largeur;
-    border-color: #f00 #0f0 #00f #ff0;
-  }
 }

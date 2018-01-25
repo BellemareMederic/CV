@@ -6,6 +6,9 @@
   @include tablet{
     padding:8vh 0 0;
   }
+  @include desktop{
+    padding-bottom: 4vh;
+  }
   .triangle{
     position: absolute;
     top:0;
@@ -15,6 +18,7 @@
     }
     @include desktop{
       @include triangle('top-left',$Section2_bg_color,10vh);
+
     }
   }
   h3{
@@ -23,6 +27,6 @@
     }
   }
   .date{
-    border-left: 2px solid #000;
+    border-left: 2px solid $border__color;
   }
 }

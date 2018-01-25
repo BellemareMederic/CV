@@ -13,6 +13,9 @@
     .triangle{
       @include triangle("top-left",$Header_bg_Color,5vh,100vw);
     }
+    .triangle2{
+      @include triangle("top-left",#92dce5,13vh,100vw);
+    }
   }
   @include desktop{
     .triangle{
@@ -49,7 +52,7 @@
     flex-shrink: 0;
     display: none;
     height: 40px;
-    border-left: 2px solid $Section1_infoline_spliter;
+    border-left: 2px solid $border__color;
     width: 10%;
     p{
       margin:0 5px;
@@ -69,7 +72,7 @@
     left:0;
     content:"";
     width: 100vw;
-    border-bottom:2px lighten($Section1_infoline_spliter, 40%) solid;
+    border-bottom:2px lighten($border__color, 40%) solid;
     @include small{
       display: none;
     }
