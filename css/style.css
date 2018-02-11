@@ -22,7 +22,7 @@
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
-  font-size: 1.33333em;
+  font-size: 1.3333333333em;
   line-height: 0.75em;
   vertical-align: -15%; }
 
@@ -39,24 +39,24 @@
   font-size: 5em; }
 
 .fa-fw {
-  width: 1.28571em;
+  width: 1.2857142857em;
   text-align: center; }
 
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.14286em;
+  margin-left: 2.1428571429em;
   list-style-type: none; }
   .fa-ul > li {
     position: relative; }
 
 .fa-li {
   position: absolute;
-  left: -2.14286em;
-  width: 2.14286em;
-  top: 0.14286em;
+  left: -2.1428571429em;
+  width: 2.1428571429em;
+  top: 0.1428571429em;
   text-align: center; }
   .fa-li.fa-lg {
-    left: -1.85714em; }
+    left: -1.8571428571em; }
 
 .fa-border {
   padding: .2em .25em .15em;
@@ -2439,7 +2439,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #92dce5;
+  background-color: #ACC12F;
   width: 100vw;
   height: 20px; }
   footer h2 {
@@ -2486,7 +2486,7 @@ footer {
       top: 0;
       left: 0;
       border-width: 0 0 13vh 100vw;
-      border-color: transparent transparent transparent #92dce5; } }
+      border-color: transparent transparent transparent #ACC12F; } }
   @media (min-width: 992px) {
     #etudes .triangle {
       /*Par Médéric Bellemare*/
@@ -2526,7 +2526,7 @@ footer {
     flex-shrink: 0;
     display: none;
     height: 40px;
-    border-left: 2px solid #92dce5;
+    border-left: 2px solid #ACC12F;
     width: 10%; }
     .infoline .date p {
       margin: 0 5px; }
@@ -2544,7 +2544,7 @@ footer {
     left: 0;
     content: "";
     width: 100vw;
-    border-bottom: 2px white solid; }
+    border-bottom: 2px #ecf2ca solid; }
     @media (min-width: 576px) {
       .infoline::after {
         display: none; } }
@@ -2594,7 +2594,7 @@ footer {
     #experience h3 {
       margin: 0; } }
   #experience .date {
-    border-left: 2px solid #92dce5; }
+    border-left: 2px solid #ACC12F; }
 
 #competance {
   position: relative;
@@ -2619,7 +2619,7 @@ footer {
       #competance .card {
         width: 45%; } }
     #competance .card h3 {
-      background-color: #92dce5;
+      background-color: #ACC12F;
       color: #2b303a;
       padding: 0;
       margin: 0;

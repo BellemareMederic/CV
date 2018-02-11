@@ -13,6 +13,20 @@
   <div class="container">
     <h2 class="titreSection">Expérience pertinent</h2>
     <ul>
+        <li class="infoline">
+            <div class="info">
+                <h3>La Galette Libanaise</h3>
+                <p>Cuisinier</p>
+                <ul>
+                    <li>Préparation des aliments</li>
+                    <li>Service à la clientèle</li>
+                    <li>Entretien ménager</li>
+                </ul>
+            </div>
+            <div class="date">
+                <p>2017</p>
+            </div>
+        </li>
       <li class="infoline">
         <div class="info">
           <h3>Ministère du Développement durable, de l’Environnement et de la Lutte contre les changements climatiques</h3>
@@ -26,20 +40,7 @@
           <p>2016</p>
         </div>
       </li>
-      <li class="infoline">
-        <div class="info">
-          <h3>La Galette Libanaise</h3>
-          <p>Cuisinier</p>
-          <ul>
-            <li>Préparation des aliments</li>
-            <li>Service à la clientèle</li>
-            <li>Entretien ménager</li>
-          </ul>
-        </div>
-        <div class="date">
-          <p>Emploi actuel</p>
-        </div>
-      </li>
+
       <li class="infoline">
         <div class="info">
           <h3>Commission Scolaire de la Pointe-de-l’île </h3>

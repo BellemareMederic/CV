@@ -14,7 +14,7 @@
       @include triangle("top-left",$Header_bg_Color,5vh,100vw);
     }
     .triangle2{
-      @include triangle("top-left",#92dce5,13vh,100vw);
+      @include triangle("top-left",$border__color,13vh,100vw);
     }
   }
   @include desktop{
