@@ -2433,8 +2433,10 @@ section .hidden {
       .infoline .info {
         width: 80%; } }
   .infoline .date {
-    flex-shrink: 0;
-    width: 10%; }
+    flex-shrink: 0; }
+    @media print and (min-width: 5in) {
+      .infoline .date {
+        width: 15%; } }
     @media (min-width: 576px) {
       .infoline .date {
         display: block;
@@ -2627,7 +2629,7 @@ footer {
   background-color: #2b303a;
   padding: 5vh 0; }
   #competance .titreSection {
-    color: #2b303a; }
+    color: #fff; }
   #competance .flex {
     display: flex;
     justify-content: space-between;
