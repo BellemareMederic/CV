@@ -50,19 +50,21 @@
   }
   .date{
     flex-shrink: 0;
-    display: none;
-    height: 40px;
-    border-left: 2px solid $border__color;
+    // display: none;
+    // height: 40px;
+    
     width: 10%;
+    @include small{
+      display: block;
+      height: 40px;
+      width: 15%;
+      border-left: 2px solid $border__color;
+    }
     p{
       margin:0 5px;
       @include small{
         margin:0 10px;
       }
-    }
-    @include small{
-      display: block;
-      width: 15%;
     }
   }
   &::after{

@@ -12,6 +12,7 @@
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -22,7 +23,7 @@
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
-  font-size: 1.3333333333em;
+  font-size: 1.33333em;
   line-height: 0.75em;
   vertical-align: -15%; }
 
@@ -39,24 +40,24 @@
   font-size: 5em; }
 
 .fa-fw {
-  width: 1.2857142857em;
+  width: 1.28571em;
   text-align: center; }
 
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.1428571429em;
+  margin-left: 2.14286em;
   list-style-type: none; }
   .fa-ul > li {
     position: relative; }
 
 .fa-li {
   position: absolute;
-  left: -2.1428571429em;
-  width: 2.1428571429em;
-  top: 0.1428571429em;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
   text-align: center; }
   .fa-li.fa-lg {
-    left: -1.8571428571em; }
+    left: -1.85714em; }
 
 .fa-border {
   padding: .2em .25em .15em;
@@ -71,6 +72,7 @@
 
 .fa.fa-pull-left {
   margin-right: .3em; }
+
 .fa.fa-pull-right {
   margin-left: .3em; }
 
@@ -83,6 +85,7 @@
 
 .fa.pull-left {
   margin-right: .3em; }
+
 .fa.pull-right {
   margin-left: .3em; }
 
@@ -101,6 +104,7 @@
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -108,6 +112,7 @@
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
@@ -2376,6 +2381,7 @@ a {
 section .titreSection {
   text-align: center;
   text-transform: uppercase; }
+
 section .hidden {
   display: none; }
 
@@ -2394,19 +2400,16 @@ section .hidden {
     padding: 0;
     color: #000 !important;
     background-color: #fff !important; }
-
   h1, h2, h3, h4, h5, h6, ul, li {
     margin: 0;
     padding: 0; }
-
   .fa-angle-double-down {
     display: none; }
-
   .page-jmp {
     page-break-before: always; }
-
   .hidden {
     display: block !important; } }
+
 header {
   background-color: #2b303a;
   color: #fff;
@@ -2466,7 +2469,7 @@ footer {
     #etudes .triangle {
       /*Par Médéric Bellemare*/
       /*ne pas oublier de mettre le parent du triangle
-      en position relative*/
+  en position relative*/
       position: absolute;
       width: 0;
       height: 0;
@@ -2478,7 +2481,7 @@ footer {
     #etudes .triangle2 {
       /*Par Médéric Bellemare*/
       /*ne pas oublier de mettre le parent du triangle
-      en position relative*/
+  en position relative*/
       position: absolute;
       width: 0;
       height: 0;
@@ -2491,7 +2494,7 @@ footer {
     #etudes .triangle {
       /*Par Médéric Bellemare*/
       /*ne pas oublier de mettre le parent du triangle
-      en position relative*/
+  en position relative*/
       position: absolute;
       width: 0;
       height: 0;
@@ -2524,19 +2527,18 @@ footer {
         width: 80%; } }
   .infoline .date {
     flex-shrink: 0;
-    display: none;
-    height: 40px;
-    border-left: 2px solid #ACC12F;
     width: 10%; }
+    @media (min-width: 576px) {
+      .infoline .date {
+        display: block;
+        height: 40px;
+        width: 15%;
+        border-left: 2px solid #ACC12F; } }
     .infoline .date p {
       margin: 0 5px; }
       @media (min-width: 576px) {
         .infoline .date p {
           margin: 0 10px; } }
-    @media (min-width: 576px) {
-      .infoline .date {
-        display: block;
-        width: 15%; } }
   .infoline::after {
     position: absolute;
     margin-top: 2vh;
@@ -2568,7 +2570,7 @@ footer {
       #experience .triangle {
         /*Par Médéric Bellemare*/
         /*ne pas oublier de mettre le parent du triangle
-        en position relative*/
+  en position relative*/
         position: absolute;
         width: 0;
         height: 0;
@@ -2581,7 +2583,7 @@ footer {
       #experience .triangle {
         /*Par Médéric Bellemare*/
         /*ne pas oublier de mettre le parent du triangle
-        en position relative*/
+  en position relative*/
         position: absolute;
         width: 0;
         height: 0;
@@ -2593,8 +2595,12 @@ footer {
   @media (min-width: 768px) {
     #experience h3 {
       margin: 0; } }
-  #experience .date {
-    border-left: 2px solid #ACC12F; }
+  @media (min-width: 576px) {
+    #experience .date {
+      display: block;
+      height: 40px;
+      width: 15%;
+      border-left: 2px solid #ACC12F; } }
 
 #competance {
   position: relative;
@@ -2639,7 +2645,7 @@ footer {
       #competance .triangle {
         /*Par Médéric Bellemare*/
         /*ne pas oublier de mettre le parent du triangle
-        en position relative*/
+  en position relative*/
         position: absolute;
         width: 0;
         height: 0;
@@ -2652,7 +2658,7 @@ footer {
       #competance .triangle {
         /*Par Médéric Bellemare*/
         /*ne pas oublier de mettre le parent du triangle
-        en position relative*/
+  en position relative*/
         position: absolute;
         width: 0;
         height: 0;
@@ -2661,5 +2667,3 @@ footer {
         left: 0;
         border-width: 0 0 10vh 100vw;
         border-color: transparent transparent transparent #fff; } }
-
-/*# sourceMappingURL=style.css.map */

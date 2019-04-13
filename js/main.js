@@ -10,7 +10,7 @@ $('document').ready(function () {
         return false;
     });
 
-    $( window ).bind( "onbeforeprint", toggleEtude );
+    //$( window ).bind( "onbeforeprint", toggleEtude );
 
     function toggleEtude() {
         $('#moreEtude').toggle('hide');

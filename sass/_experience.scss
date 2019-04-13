@@ -27,6 +27,11 @@
     }
   }
   .date{
-    border-left: 2px solid $border__color;
+    @include small{
+      display: block;
+      height: 40px;
+      width: 15%;
+      border-left: 2px solid $border__color;
+    }
   }
 }
