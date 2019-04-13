@@ -146,3 +146,16 @@ section {
     }
   }
 }
+
+.printhide{
+  display: inherit;
+  @include print{
+    display: none;
+  }
+}
+.printshow{
+  display: none;
+  @include print{
+    display: inherit;
+  }
+}

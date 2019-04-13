@@ -2458,6 +2458,18 @@ section .hidden {
       .infoline::after {
         display: none; } }
 
+.printhide {
+  display: inherit; }
+  @media print and (min-width: 5in) {
+    .printhide {
+      display: none; } }
+
+.printshow {
+  display: none; }
+  @media print and (min-width: 5in) {
+    .printshow {
+      display: inherit; } }
+
 header {
   background-color: #2b303a;
   color: #fff;
@@ -2488,7 +2500,10 @@ header {
           align-items: center;
           justify-content: center;
           height: 100%;
-          width: 100%; }
+          width: 100%;
+          transition: font 0.2s ease; }
+      header .social_list ul :hover a {
+        font-size: 2em; }
   header a {
     color: #fff; }
     header a:hover {

@@ -33,7 +33,12 @@ header {
           justify-content: center;
           height: 100%;
           width: 100%;
+          transition: font 0.2s ease;
         }
+        
+      }
+      :hover a{
+        font-size:2em;
       }
     }
   }
