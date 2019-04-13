@@ -2,6 +2,7 @@
   position: relative;
   background-color: $Section2_bg_color;
   padding:$Section_tablet_Padding;
+
   .titreSection{
     color:$couleur_secondaire;
   }
@@ -17,6 +18,8 @@
     margin-bottom: 20px;
     background-color:$Section2_box_bg_color;
     transition: box-shadow 0.2s linear;
+    border-radius: 10px;
+    overflow: hidden;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     &:hover{
       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);

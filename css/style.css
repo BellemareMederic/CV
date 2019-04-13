@@ -2518,8 +2518,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #ACC12F;
-  width: 100vw;
-  height: 20px; }
+  width: 100vw; }
   footer h2 {
     color: #2b303a;
     display: block;
@@ -2640,6 +2639,8 @@ footer {
     margin-bottom: 20px;
     background-color: #FFF;
     transition: box-shadow 0.2s linear;
+    border-radius: 10px;
+    overflow: hidden;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     #competance .card:hover {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
