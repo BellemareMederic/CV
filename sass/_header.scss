@@ -1,34 +1,51 @@
-header{
+header {
   background-color: $Header_bg_Color;
-  color:$Header_font_Color;
-  padding:$Section_mobile_Padding;
-  @include tablet{
-    padding:5vh 0 0;
+  color: $Header_font_Color;
+  padding: $Section_mobile_Padding;
+  @include tablet {
+    padding: 5vh 0 0;
   }
-  .infoGeneral{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+  h1 {
+    padding: 0 0 2vh;
+    text-align: center;
+    margin: 0;
   }
-  ul{
-    list-style: none;
-    margin:0;
-    padding:0;
-  }
-  a{
-    color:$Header_link_Color;
-    &:hover{
-      color:$Header_link_OverColor;
+  
+  .social_list {
+    // width: 30vw;
+    // min-width: calc(50px*3);
+    max-width: 200px;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-around;
+      li {
+        background-color: $couleur_heading;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+        }
+      }
     }
-    &:active,&:visited{
-      color:$Header_link_ActiveColor;
+  }
+  a {
+    color: $Header_link_Color;
+    &:hover {
+      color: $Header_link_OverColor;
+    }
+    &:active,
+    &:visited {
+      color: $Header_link_ActiveColor;
     }
   }
 }
 
-h1{
-  padding: 0 0 4vh;
-  text-align: center;
-  margin:0;
-}

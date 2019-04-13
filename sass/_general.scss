@@ -88,3 +88,61 @@ section {
   }
 
 }
+
+.infoline{
+  position: relative;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vh;
+  .info{
+    width: 100%;
+    h3{
+      margin:2vh 0 0 0;
+    }
+    p{
+      margin:10px 0;
+    }
+    ul{
+      list-style:disc;
+      padding-left: 20px;
+      font-size: 0.8em;
+    }
+    @include small{
+      width: 80%;
+    }
+  }
+  .date{
+    flex-shrink: 0;
+    // display: none;
+    // height: 40px;
+    
+    width: 10%;
+    @include small{
+      display: block;
+      height: 40px;
+      width: 15%;
+      border-left: 2px solid $border__color;
+    }
+    p{
+      margin:0 5px;
+      @include small{
+        margin:0 10px;
+      }
+    }
+  }
+  &::after{
+    position: absolute;
+    margin-top:2vh;
+    bottom:-2vh;
+    left:0;
+    content:"";
+    width: 100vw;
+    border-bottom:2px lighten($border__color, 40%) solid;
+    @include small{
+      display: none;
+    }
+  }
+}
