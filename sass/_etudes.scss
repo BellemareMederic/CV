@@ -1,25 +1,25 @@
 #etudes{
   position: relative;
-  background-color: $Section1_bg_color;
-  color:$Section1_font_color;
-  padding:$Section_mobile_Padding;
+  background-color: $couleur_section_secondaire;
+  color:$couleur_text_secondaire;
+  padding:$padding_section_mobile;
   @include tablet{
     padding:8vh 0 0;
   }
   .titreSection{
-    color:$Section1_font_color;
+    color:$couleur_text_secondaire;
   }
   @include small{
     .triangle{
-      @include triangle("top-left",$Header_bg_Color,5vh,100vw);
+      @include triangle("top-left",$couleur_section_primaire,5vh,100vw);
     }
     .triangle2{
-      @include triangle("top-left",$border__color,13vh,100vw);
+      @include triangle("top-left",$couleur_emphase,13vh,100vw);
     }
   }
   @include desktop{
     .triangle{
-      @include triangle("top-left",$Header_bg_Color,10vh,100vw);
+      @include triangle("top-left",$couleur_section_primaire,10vh,100vw);
     }
   }
 }

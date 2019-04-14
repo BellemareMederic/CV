@@ -1,7 +1,7 @@
 #experience{
   position: relative;
-  background-color: $Section1_bg_color;
-  padding:$Section_mobile_Padding;
+  background-color: $couleur_section_secondaire;
+  padding:$padding_section_mobile;
   color:#000;
   @include tablet{
     padding:8vh 0 0;
@@ -14,10 +14,10 @@
     top:0;
     left:0;
     @include small{
-      @include triangle('top-left',$Section2_bg_color,5vh);
+      @include triangle('top-left',$couleur_section_primaire,5vh);
     }
     @include desktop{
-      @include triangle('top-left',$Section2_bg_color,10vh);
+      @include triangle('top-left',$couleur_section_primaire,10vh);
 
     }
   }

@@ -1,19 +1,24 @@
 header {
-  background-color: $Header_bg_Color;
-  color: $Header_font_Color;
-  padding: $Section_mobile_Padding;
+  background-color: $couleur_section_primaire;
+  color: $couleur_text_primaire;
+  padding: 2vh 0;
   @include tablet {
-    padding: 5vh 0 0;
+    padding: 0;
   }
   h1 {
-    padding: 0 0 2vh;
+    padding: 2vh 0;
     text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 2em;
     margin: 0;
+    @include small{
+      font-size: 3.5em;
+      letter-spacing: 5px;
+      // padding:30px 0;
+    }
   }
   
   .social_list {
-    // width: 30vw;
-    // min-width: calc(50px*3);
     max-width: 200px;
     margin: 0 auto;
     ul {
@@ -22,13 +27,18 @@ header {
       flex-direction: row;
       justify-content: space-around;
       li {
-        background-color: $couleur_heading;
-        height: 50px;
-        width: 50px;
+        background-color: $couleur_background_social;
+          height: 40px;
+          width: 40px;
         border-radius: 50%;
         overflow: hidden;
+        @include small{
+          height: 50px;
+          width: 50px;
+        }
         a{
           display: flex;
+          color:whiteorblack($couleur_background_social);
           align-items: center;
           justify-content: center;
           height: 100%;
@@ -43,13 +53,13 @@ header {
     }
   }
   a {
-    color: $Header_link_Color;
+    color: $couleur_link;
     &:hover {
-      color: $Header_link_OverColor;
+      color: $couleur_link--hover;
     }
     &:active,
     &:visited {
-      color: $Header_link_ActiveColor;
+      color: $couleur_link--active;
     }
   }
 }

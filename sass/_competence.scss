@@ -1,10 +1,11 @@
 #competance{
   position: relative;
-  background-color: $Section2_bg_color;
-  padding:$Section_tablet_Padding;
+  background-color: $couleur_section_primaire;
+  padding:$padding_section_table;
 
   .titreSection{
-    color:$couleur_secondaire;
+    color:$couleur_text_primaire;
+    padding: 20px 0 0 0;
   }
   .flex{
     display: flex;
@@ -16,7 +17,7 @@
   .card{
     width: 100%;
     margin-bottom: 20px;
-    background-color:$Section2_box_bg_color;
+    background-color:$couleur_section_secondaire;
     transition: box-shadow 0.2s linear;
     border-radius: 10px;
     overflow: hidden;
@@ -32,20 +33,22 @@
 
     }
     h3{
-      background-color: $Section2_box_border_color;
-      color:$Section2_font_color;
+      background-color: $couleur_emphase;
+      color: whiteorblack($couleur_emphase);
       padding:0;
       margin:0;
       text-align: center;
       @include tablet{
-
         padding:10px 0;
       }
     }
     ul{
       padding: 10px 60px;
       list-style-type: disc;
-      color:$Section2_box_font_color;
+      color:whiteorblack($couleur_section_secondaire);
+      li{
+        line-height: 1.4em;
+      }
     }
   }
   .triangle{
@@ -53,10 +56,10 @@
     top:0;
     left:0;
     @include small{
-      @include triangle('top-left',$Section1_bg_color,5vh);
+      @include triangle('top-left',$couleur_section_secondaire,5vh);
     }
     @include desktop{
-      @include triangle('top-left',$Section1_bg_color,10vh);
+      @include triangle('top-left',$couleur_section_secondaire,10vh);
     }
   }
 }

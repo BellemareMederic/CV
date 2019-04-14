@@ -2,13 +2,17 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $Footer_color;
+  background-color: $couleur_section_primaire;
   width:100vw;
   h2{
-    color:$Footer_font__color;
+    color:whiteorblack($couleur_section_primaire);
     display: block;
-    font-size:1rem;
+    font-size:0.8rem;
+    padding:5px 0;
     margin:0;
+    @include small{
+      font-size:1rem;
+    }
   }
   @include desktop{
     width:100vw;

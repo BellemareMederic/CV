@@ -1,0 +1,6 @@
+@function whiteorblack($couleur){
+    @if (lightness($couleur) > 50) {
+        @return #000;
+    }
+    @return #fff;
+}

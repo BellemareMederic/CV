@@ -1,0 +1,37 @@
+/*Couleur de section*/
+$couleur_section_primaire:#2e86de !default;
+$couleur_section_secondaire:#fff !default;
+$couleur_emphase: #224870;
+$couleur_emphase: #001242;
+/*Couleur de text de section*/
+$couleur_text_primaire: #fff !default;
+$couleur_text_secondaire: #000 !default;
+
+/*Couleur de lien*/
+$couleur_link: #000 !default;
+$couleur_link--hover: #888 !default;
+$couleur_link--active: #444 !default;
+
+/*Couleur des icon social*/
+$couleur_background_social:lighten($couleur_section_secondaire, 10);
+
+/*Padding de section*/
+$padding_section_mobile:4vh 0 !default;
+$padding_section_table:5vh 0 !default;
+
+/*Largeur des container selon le breakpoint*/
+$container_size_desktop:65vw !default;
+$container_size_mobile:90vw !default;
+
+/*Breakpoint min-width*/
+$break-small:576px !default;
+$break-tablet:768px !default;
+$break-desktop:992px !default;
+$break-large:1200px !default;
+/*couleur diverse*/
+$border__color:$couleur_section_primaire !default;
+
+
+@if not variable-exists(box_heading_color) {
+    $box_heading_color: darken($couleur_section_primaire,20) !default;
+}

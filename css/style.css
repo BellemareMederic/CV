@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,700");
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2329,19 +2330,15 @@
   overflow: visible;
   clip: auto; }
 
-/*Couleur par default*/
-/*General option*/
-/*Couleur du header*/
-/*------------------*/
-/*Couleur de section 1 Étude*/
-/*------------------*/
-/*Couleur de section 2 compétance*/
-/*------------------*/
-/*Footer color*/
-/*------------------*/
-/*couleur diverse*/
+/*Couleur de section*/
+/*Couleur de text de section*/
+/*Couleur de lien*/
+/*Couleur des icon social*/
+/*Padding de section*/
 /*Largeur des container selon le breakpoint*/
 /*Breakpoint min-width*/
+/*couleur diverse*/
+/*You can edit*/
 * {
   box-sizing: border-box; }
 
@@ -2362,12 +2359,11 @@ ul {
 a {
   text-decoration: none;
   cursor: hand;
-  color: #fff; }
+  color: #000; }
   a:hover {
     color: green; }
 
 .container {
-  overflow-x: hidden;
   max-width: 90vw;
   margin: 0 auto;
   transition-property: width, height;
@@ -2442,7 +2438,7 @@ section .hidden {
         display: block;
         height: 40px;
         width: 15%;
-        border-left: 2px solid #ACC12F; } }
+        border-left: 2px solid #2e86de; } }
     .infoline .date p {
       margin: 0 5px; }
       @media (min-width: 576px) {
@@ -2455,7 +2451,7 @@ section .hidden {
     left: 0;
     content: "";
     width: 100vw;
-    border-bottom: 2px #ecf2ca solid; }
+    border-bottom: 2px #deecfa solid; }
     @media (min-width: 576px) {
       .infoline::after {
         display: none; } }
@@ -2473,16 +2469,22 @@ section .hidden {
       display: inherit; } }
 
 header {
-  background-color: #2b303a;
+  background-color: #2e86de;
   color: #fff;
-  padding: 4vh 0; }
+  padding: 2vh 0; }
   @media (min-width: 768px) {
     header {
-      padding: 5vh 0 0; } }
+      padding: 0; } }
   header h1 {
-    padding: 0 0 2vh;
+    padding: 2vh 0;
     text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 2em;
     margin: 0; }
+    @media (min-width: 576px) {
+      header h1 {
+        font-size: 3.5em;
+        letter-spacing: 5px; } }
   header .social_list {
     max-width: 200px;
     margin: 0 auto; }
@@ -2492,13 +2494,18 @@ header {
       flex-direction: row;
       justify-content: space-around; }
       header .social_list ul li {
-        background-color: #ACC12F;
-        height: 50px;
-        width: 50px;
+        background-color: white;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
         overflow: hidden; }
+        @media (min-width: 576px) {
+          header .social_list ul li {
+            height: 50px;
+            width: 50px; } }
         header .social_list ul li a {
           display: flex;
+          color: #000;
           align-items: center;
           justify-content: center;
           height: 100%;
@@ -2507,23 +2514,27 @@ header {
       header .social_list ul :hover a {
         font-size: 2em; }
   header a {
-    color: #fff; }
+    color: #000; }
     header a:hover {
-      color: #fff; }
+      color: #888; }
     header a:active, header a:visited {
-      color: #fafafa; }
+      color: #444; }
 
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ACC12F;
+  background-color: #2e86de;
   width: 100vw; }
   footer h2 {
-    color: #2b303a;
+    color: #000;
     display: block;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    padding: 5px 0;
     margin: 0; }
+    @media (min-width: 576px) {
+      footer h2 {
+        font-size: 1rem; } }
   @media (min-width: 992px) {
     footer {
       width: 100vw;
@@ -2551,7 +2562,7 @@ footer {
       top: 0;
       left: 0;
       border-width: 0 0 5vh 100vw;
-      border-color: transparent transparent transparent #2b303a; }
+      border-color: transparent transparent transparent #2e86de; }
     #etudes .triangle2 {
       /*Par Médéric Bellemare*/
       /*ne pas oublier de mettre le parent du triangle
@@ -2563,7 +2574,7 @@ footer {
       top: 0;
       left: 0;
       border-width: 0 0 13vh 100vw;
-      border-color: transparent transparent transparent #ACC12F; } }
+      border-color: transparent transparent transparent #001242; } }
   @media (min-width: 992px) {
     #etudes .triangle {
       /*Par Médéric Bellemare*/
@@ -2576,7 +2587,7 @@ footer {
       top: 0;
       left: 0;
       border-width: 0 0 10vh 100vw;
-      border-color: transparent transparent transparent #2b303a; } }
+      border-color: transparent transparent transparent #2e86de; } }
 
 #experience {
   position: relative;
@@ -2605,7 +2616,7 @@ footer {
         top: 0;
         left: 0;
         border-width: 0 0 5vh 100vw;
-        border-color: transparent transparent transparent #2b303a; } }
+        border-color: transparent transparent transparent #2e86de; } }
     @media (min-width: 992px) {
       #experience .triangle {
         /*Par Médéric Bellemare*/
@@ -2618,17 +2629,18 @@ footer {
         top: 0;
         left: 0;
         border-width: 0 0 10vh 100vw;
-        border-color: transparent transparent transparent #2b303a; } }
+        border-color: transparent transparent transparent #2e86de; } }
   @media (min-width: 768px) {
     #experience h3 {
       margin: 0; } }
 
 #competance {
   position: relative;
-  background-color: #2b303a;
+  background-color: #2e86de;
   padding: 5vh 0; }
   #competance .titreSection {
-    color: #fff; }
+    color: #fff;
+    padding: 20px 0 0 0; }
   #competance .flex {
     display: flex;
     justify-content: space-between;
@@ -2637,7 +2649,7 @@ footer {
   #competance .card {
     width: 100%;
     margin-bottom: 20px;
-    background-color: #FFF;
+    background-color: #fff;
     transition: box-shadow 0.2s linear;
     border-radius: 10px;
     overflow: hidden;
@@ -2651,8 +2663,8 @@ footer {
       #competance .card {
         width: 45%; } }
     #competance .card h3 {
-      background-color: #ACC12F;
-      color: #2b303a;
+      background-color: #001242;
+      color: #fff;
       padding: 0;
       margin: 0;
       text-align: center; }
@@ -2662,7 +2674,9 @@ footer {
     #competance .card ul {
       padding: 10px 60px;
       list-style-type: disc;
-      color: #2b303a; }
+      color: #000; }
+      #competance .card ul li {
+        line-height: 1.4em; }
   #competance .triangle {
     position: absolute;
     top: 0;
