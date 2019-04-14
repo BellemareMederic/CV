@@ -1,13 +1,9 @@
 #experience{
   position: relative;
   background-color: $couleur_section_secondaire;
-  padding:$padding_section_mobile;
   color:#000;
-  @include tablet{
-    padding:8vh 0 0;
-  }
-  @include desktop{
-    padding-bottom: 4vh;
+  @include small{
+    padding-bottom:5vh;
   }
   .triangle{
     position: absolute;

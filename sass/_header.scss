@@ -8,16 +8,16 @@ header {
   h1 {
     padding: 2vh 0;
     text-align: center;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 2em;
     margin: 0;
-    @include small{
+    @include small {
       font-size: 3.5em;
       letter-spacing: 5px;
       // padding:30px 0;
     }
   }
-  
+
   .social_list {
     max-width: 200px;
     margin: 0 auto;
@@ -28,27 +28,27 @@ header {
       justify-content: space-around;
       li {
         background-color: $couleur_background_social;
-          height: 40px;
-          width: 40px;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
         overflow: hidden;
-        @include small{
+        @include small {
           height: 50px;
           width: 50px;
         }
-        a{
+        a {
           display: flex;
-          color:whiteorblack($couleur_background_social);
+          color: whiteorblack($couleur_background_social);
           align-items: center;
           justify-content: center;
           height: 100%;
           width: 100%;
-          transition: font 0.2s ease;
+          transition: font 0.2s ease-in-out;
+          shape-rendering: geometricPrecision;
         }
-        
       }
-      :hover a{
-        font-size:2em;
+      :hover a {
+        font-size: 1.6em;
       }
     }
   }
@@ -63,4 +63,3 @@ header {
     }
   }
 }
-

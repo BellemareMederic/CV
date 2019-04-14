@@ -2382,6 +2382,10 @@ section .titreSection {
 section .hidden {
   display: none; }
 
+@media (min-width: 576px) {
+  section {
+    padding: 10vh 0 0; } }
+
 .more {
   display: block;
   text-align: center;
@@ -2400,6 +2404,12 @@ section .hidden {
   h1, h2, h3, h4, h5, h6, ul, li {
     margin: 0;
     padding: 0; }
+  .container {
+    margin: 0 auto;
+    padding: 0; }
+  section {
+    padding: 0;
+    margin: 0; }
   .fa-angle-double-down {
     display: none; }
   .page-jmp {
@@ -2425,6 +2435,8 @@ section .hidden {
       list-style: disc;
       padding-left: 20px;
       font-size: 0.8em; }
+      .infoline .info ul li {
+        line-height: 1.4em; }
     @media (min-width: 576px) {
       .infoline .info {
         width: 80%; } }
@@ -2478,7 +2490,7 @@ header {
   header h1 {
     padding: 2vh 0;
     text-align: center;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 2em;
     margin: 0; }
     @media (min-width: 576px) {
@@ -2510,9 +2522,10 @@ header {
           justify-content: center;
           height: 100%;
           width: 100%;
-          transition: font 0.2s ease; }
+          transition: font 0.2s ease-in-out;
+          shape-rendering: geometricPrecision; }
       header .social_list ul :hover a {
-        font-size: 2em; }
+        font-size: 1.6em; }
   header a {
     color: #000; }
     header a:hover {
@@ -2527,27 +2540,21 @@ footer {
   background-color: #2e86de;
   width: 100vw; }
   footer h2 {
-    color: #000;
     display: block;
-    font-size: 0.8rem;
     padding: 5px 0;
-    margin: 0; }
+    margin: 0;
+    text-align: center;
+    color: #000;
+    font-size: 0.8rem; }
     @media (min-width: 576px) {
       footer h2 {
-        font-size: 1rem; } }
-  @media (min-width: 992px) {
-    footer {
-      width: 100vw;
-      height: 75px; } }
+        font-size: 1rem;
+        padding: 3vh 0; } }
 
 #etudes {
   position: relative;
   background-color: #fff;
-  color: #000;
-  padding: 4vh 0; }
-  @media (min-width: 768px) {
-    #etudes {
-      padding: 8vh 0 0; } }
+  color: #000; }
   #etudes .titreSection {
     color: #000; }
   @media (min-width: 576px) {
@@ -2592,14 +2599,10 @@ footer {
 #experience {
   position: relative;
   background-color: #fff;
-  padding: 4vh 0;
   color: #000; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     #experience {
-      padding: 8vh 0 0; } }
-  @media (min-width: 992px) {
-    #experience {
-      padding-bottom: 4vh; } }
+      padding-bottom: 5vh; } }
   #experience .triangle {
     position: absolute;
     top: 0;
@@ -2636,8 +2639,7 @@ footer {
 
 #competance {
   position: relative;
-  background-color: #2e86de;
-  padding: 5vh 0; }
+  background-color: #2e86de; }
   #competance .titreSection {
     color: #fff;
     padding: 20px 0 0 0; }
@@ -2654,8 +2656,9 @@ footer {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-    #competance .card:hover {
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    @media (min-width: 576px) {
+      #competance .card:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); } }
     @media print and (min-width: 5in) {
       #competance .card {
         box-shadow: none; } }

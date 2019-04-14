@@ -5,17 +5,15 @@ footer{
   background-color: $couleur_section_primaire;
   width:100vw;
   h2{
-    color:whiteorblack($couleur_section_primaire);
     display: block;
-    font-size:0.8rem;
     padding:5px 0;
     margin:0;
+    text-align: center;
+    color:whiteorblack($couleur_section_primaire);
+    font-size:0.8rem;
     @include small{
       font-size:1rem;
+      padding:3vh 0;
     }
-  }
-  @include desktop{
-    width:100vw;
-    height: 75px;
   }
 }

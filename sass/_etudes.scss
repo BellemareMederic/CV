@@ -2,10 +2,6 @@
   position: relative;
   background-color: $couleur_section_secondaire;
   color:$couleur_text_secondaire;
-  padding:$padding_section_mobile;
-  @include tablet{
-    padding:8vh 0 0;
-  }
   .titreSection{
     color:$couleur_text_secondaire;
   }
