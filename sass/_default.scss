@@ -31,6 +31,8 @@ $break-large:1200px !default;
 /*couleur diverse*/
 $border__color:$couleur_section_primaire !default;
 
+$animationDuration: 0.6s;
+
 
 @if not variable-exists(box_heading_color) {
     $box_heading_color: darken($couleur_section_primaire,20) !default;
