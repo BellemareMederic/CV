@@ -23,7 +23,7 @@ a {
   text-decoration: none;
   cursor: hand;
   color: $couleur_link;
-  &:hover {
+  &:hover,&:focus {
     color: green;
   }
 }
@@ -58,6 +58,11 @@ section {
   .moreSection{
     overflow: hidden;
     transition: height 0.5s ease, opacity .5s ease;
+
+    @include print{
+      height: auto;
+      opacity: 1;
+    }
   }
 
   .more {
