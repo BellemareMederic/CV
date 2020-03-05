@@ -28,6 +28,7 @@
     }
     @include print{
       box-shadow: none;
+      margin-bottom: 10px;
     }
     @include tablet{
       width: 45%;

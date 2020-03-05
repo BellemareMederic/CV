@@ -23,7 +23,7 @@ a {
   text-decoration: none;
   cursor: hand;
   color: $couleur_link;
-  &:hover {
+  &:hover,&:focus {
     color: green;
   }
 }
@@ -48,25 +48,32 @@ section {
     text-align: center;
     text-transform: uppercase;
   }
-
-  .hidden {
-    display: none;
-  }
-
+  
   @include small{
     padding:10vh 0 0;
   }
   
 }
 
-.more {
-  display: block;
-  text-align: center;
-  cursor: pointer;
-  i {
-    font-size: 2em;
-    text-align: center;
+  .moreSection{
+    overflow: hidden;
+    transition: height 0.5s ease, opacity .5s ease;
+
+    @include print{
+      height: auto;
+      opacity: 1;
+    }
   }
+
+  .more {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    i {
+      transition: all 0.4s linear 0s;
+      font-size: 2em;
+      text-align: center;
+    }
 }
 
 @include print {

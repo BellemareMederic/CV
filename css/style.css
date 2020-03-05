@@ -2360,7 +2360,7 @@ a {
   text-decoration: none;
   cursor: hand;
   color: #000; }
-  a:hover {
+  a:hover, a:focus {
     color: green; }
 
 .container {
@@ -2379,18 +2379,24 @@ section .titreSection {
   text-align: center;
   text-transform: uppercase; }
 
-section .hidden {
-  display: none; }
-
 @media (min-width: 576px) {
   section {
     padding: 10vh 0 0; } }
+
+.moreSection {
+  overflow: hidden;
+  transition: height 0.5s ease, opacity .5s ease; }
+  @media print and (min-width: 5in) {
+    .moreSection {
+      height: auto;
+      opacity: 1; } }
 
 .more {
   display: block;
   text-align: center;
   cursor: pointer; }
   .more i {
+    transition: all 0.4s linear 0s;
     font-size: 2em;
     text-align: center; }
 
@@ -2604,6 +2610,9 @@ footer {
   @media (min-width: 576px) {
     #experience {
       padding-bottom: 5vh; } }
+  @media print and (min-width: 5in) {
+    #experience {
+      page-break-before: always; } }
   #experience .triangle {
     position: absolute;
     top: 0;
@@ -2662,7 +2671,8 @@ footer {
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); } }
     @media print and (min-width: 5in) {
       #competance .card {
-        box-shadow: none; } }
+        box-shadow: none;
+        margin-bottom: 10px; } }
     @media (min-width: 768px) {
       #competance .card {
         width: 45%; } }

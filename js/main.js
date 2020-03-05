@@ -1,24 +1,49 @@
-$('document').ready(function () {
-    console.log('Main.js loaded');
-    $('#btnMoreEtude').click(function () {
-        toggleEtude();
+document.addEventListener('DOMContentLoaded', documentLoaded, false);
+
+
+function documentLoaded() {
+    var allMoreSection = document.getElementsByClassName("moreSection");
+    
+    console.log('%c Besoin d\'information \n bellemaremederic@gmail.com ', 'background: #001242; color: #2e86de; font-size: 3em;');
+
+    init();
+
+    window.addEventListener("beforeprint",function(){
+        console.log("beforeprint")
+        for (const element of allMoreSection) {
+            element.style.height = element.scrollHeight;
+            element.style.opacity = 1;
+            element.dataset.status = "open";
+        }
     });
 
-    $('#btnMoreExp').click(function () {
-        toggleExp();
-        $("html, body").animate({ scrollTop: $(document).height() }, "slow");
-        return false;
-    });
-
-    //$( window ).bind( "onbeforeprint", toggleEtude );
-
-    function toggleEtude() {
-        $('#moreEtude').toggle('hide');
-        $('#btnMoreEtude').toggleClass('fa-rotate-180');
+    function init() {
+        for (const element of allMoreSection) {
+            element.style.height = 0;
+            element.style.opacity = 0;
+            element.dataset.status = "close";
+            var nextButton = element.nextElementSibling;
+            nextButton.addEventListener("click", function(clickEvent) {
+                toggleSection(clickEvent, element);
+            });
+        }
     }
 
-    function toggleExp() {
-        $('#moreExp').toggle('hide');
-        $('#btnMoreExp').toggleClass('fa-rotate-180');
+    function toggleSection(event, section) {
+        event.target.classList.toggle("fa-rotate-180");
+        animation(section);
     }
-});
+
+    function animation(element) {
+        var dataset = element.dataset;
+        if(dataset.status == "close") {
+            element.style.height = element.scrollHeight;
+            element.style.opacity = 1
+            dataset.status = "open"
+        } else {
+            element.style.height = 0;
+            element.style.opacity = 0;
+            dataset.status = "close"
+        }
+    }
+}

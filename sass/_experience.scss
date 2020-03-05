@@ -5,6 +5,9 @@
   @include small{
     padding-bottom:5vh;
   }
+  @include print{
+    page-break-before: always;
+  }
   .triangle{
     position: absolute;
     top:0;
