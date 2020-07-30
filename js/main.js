@@ -8,15 +8,6 @@ function documentLoaded() {
 
     init();
 
-    window.addEventListener("beforeprint",function(){
-        console.log("beforeprint")
-        for (const element of allMoreSection) {
-            element.style.height = element.scrollHeight;
-            element.style.opacity = 1;
-            element.dataset.status = "open";
-        }
-    });
-
     function init() {
         for (const element of allMoreSection) {
             element.style.height = 0;
@@ -29,6 +20,15 @@ function documentLoaded() {
         }
     }
 
+    window.addEventListener("beforeprint",function(){
+        console.log("beforeprint")
+        for (const element of allMoreSection) {
+            element.style.height = element.scrollHeight;
+            element.style.opacity = 1;
+            element.dataset.status = "open";
+        }
+    });
+
     function toggleSection(event, section) {
         event.target.classList.toggle("fa-rotate-180");
         animation(section);
@@ -37,7 +37,7 @@ function documentLoaded() {
     function animation(element) {
         var dataset = element.dataset;
         if(dataset.status == "close") {
-            element.style.height = element.scrollHeight;
+            element.style.height = element.scrollHeight+"px";
             element.style.opacity = 1
             dataset.status = "open"
         } else {
