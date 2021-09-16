@@ -24,6 +24,6 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "js-yaml": ">=3.13.1",
-    "set-value": ">=2.0.1"
+    "set-value": ">=4.0.1"
   }
 }
