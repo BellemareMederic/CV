@@ -1,0 +1,35 @@
+---
+import { getCollection, getEntry } from "astro:content";
+
+// Get all entries from a collection.
+// Requires the name of the collection as an argument.
+const allEtude = await getCollection("etude", ({ data }) => {
+    return data.publish == true;
+});
+---
+
+<section id="etudes" class="py-8 dark:text-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-semibold mb-6">Études</h2>
+        <ul class="space-y-6">
+            {
+                allEtude.map((post) => (
+                    <li class="flex justify-between border-b pb-4">
+                        <div>
+                            <h3 class="font-bold">{post.data.title}</h3>
+                            <p>
+                                {post.data.skill?.map((skill, index) => (
+                                    <a rel="noopener" href={skill.url} target="_blank">
+                                        {skill.title}
+                                        {index < post.data.skill.length - 1 ? ", " : null}
+                                    </a>
+                                ))}
+                            </p>
+                        </div>
+                        <p>{post.data.year}</p>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</section>

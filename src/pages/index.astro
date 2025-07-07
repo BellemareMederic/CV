@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Etude from '../components/etude.astro';
+import Competance from '../components/competance.astro';
+---
+
+<Layout cssClass="bg-white dark:bg-gray-800">
+	<header class="py-6">
+    <div class="container mx-auto px-4">
+      <h1 class="dark:text-white text-4xl font-bold text-center">Médéric Bellemare</h1>
+    </div>
+	 <div class="flex justify-center space-x-4 mt-4">
+        <a href="mailto:Bellemaremederic@gmail.com" title="Envoyer un courriel" class="text-gray-700 hover:text-green-600">
+          Courriel
+        </a>
+        <a href="https://www.linkedin.com/in/mederic-bellemare/" target="_blank" rel="noopener" title="LinkedIn" class="text-blue-700 hover:text-blue-900">
+          Linkedin
+        </a>
+      </div>
+  </header>
+  <main>
+	<Etude />
+	<Competance/>
+
+  </main>
+</Layout>
